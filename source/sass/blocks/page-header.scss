@@ -1,0 +1,42 @@
+.page-header {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  min-height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-white;
+  z-index: 2;
+
+  @media (max-width: $tablet-width) {
+    top: 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 6px;
+  }
+}
+
+.page-header__logo {
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+.page-header__contacts {
+  @include list-reset;
+  margin-right: 49px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.page-header__button {
+  margin-right: 5px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
