@@ -1,0 +1,128 @@
+.hero {
+  position: relative;
+  min-height: 878px;
+  padding-top: 315px;
+  color: $color-white;
+
+  background-color: $color-accent-200;
+  background-image:
+    url("../../img/hero@1x.png"),
+    url("../../img/bg-hero-figure.svg"),
+    url("../../img/bg-hero-pattern.png");
+  background-repeat: no-repeat;
+  background-position:
+    calc(50% + 430px) 258px,
+    calc(50% + 405px) 118px,
+    50% 0;
+  background-size: 705px 515px, auto, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../../img/hero@2x.png"),
+      url("../../img/bg-hero-figure.svg"),
+      url("../../img/bg-hero-pattern.png");
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 686px;
+    padding-top: 188px;
+    background-position:
+      calc(50% + 357px) 113px,
+      calc(50% + 320px) -40px,
+      50% 0;
+    background-size: 465px 340px, 529px 506px, cover;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 647px;
+    padding-top: 285px;
+    background-position:
+      calc(50% + 16px) 92px,
+      calc(50% + 244px) -46px,
+      50% 0;
+    background-size: 301px 220px, 505px 483px, cover;
+  }
+}
+
+.hero h2 {
+  margin: 0;
+  margin-bottom: 28px;
+  margin-left: -4px;
+  max-width: 720px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 63px;
+    max-width: 330px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
+
+.hero p {
+  position: relative;
+  max-width: 720px;
+  margin: 0;
+  margin-bottom: 43px;
+  padding-left: 95px;
+  font-size: 22px;
+  line-height: 34px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 450px;
+    margin-bottom: 57px;
+    margin-left: 65px;
+    padding-left: 49px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+    margin-bottom: 40px;
+    margin-left: 3px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+.hero p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 66px;
+  height: 2px;
+  background-color: $color-white;
+
+  @media (max-width: $tablet-width) {
+    width: 33px;
+  }
+}
+
+.hero a {
+  min-width: 406px;
+  margin-left: 95px;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 379px;
+    margin-left: 114px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 100%;
+    margin-left: 0;
+  }
+}
