@@ -1,7 +1,12 @@
-root: true
+{
+  "root": true,
 
-env:
-  browser: true
+  "env": {
+    "es2017": true,
+    "browser": true
+  },
 
-extends:
-  "htmlacademy/es5"
+  "extends": [
+    "htmlacademy/vanilla"
+  ]
+}

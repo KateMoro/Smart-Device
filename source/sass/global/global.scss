@@ -14,8 +14,8 @@ html {
 
 body {
   min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   background-color: $color-white;
   color: $color-gray-700;

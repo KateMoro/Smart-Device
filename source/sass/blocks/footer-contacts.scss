@@ -1,0 +1,31 @@
+.footer-contacts {
+  @media (max-width: $tablet-width) {
+    padding-left: 6px;
+  }
+}
+
+.footer-contacts h2 {
+  margin: 0;
+  margin-bottom: 22px;
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+  }
+}
+
+.footer-contacts ul {
+  @include list-reset;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 20px;
+  }
+}
+
+.footer-contacts p {
+  margin: 0;
+}
+
+.footer-contacts a {
+  color: inherit;
+  text-decoration: none;
+}
