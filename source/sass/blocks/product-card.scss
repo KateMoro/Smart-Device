@@ -1,0 +1,50 @@
+.product-card {
+  position: relative;
+}
+
+.product-card::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 63px;
+  height: 63px;
+  background-color: $color-accent-100;
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-card h3 {
+  position: absolute;
+  top: 30px;
+  left: 44px;
+  max-width: 170px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-white;
+  z-index: 2;
+
+  @media (max-width: $tablet-width) {
+    top: 20px;
+    left: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 0;
+    left: 36px;
+  }
+}
+
+.product-card img {
+  display: block;
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+
+  @media (max-width: $tablet-width) {
+    height: 256px;
+  }
+}
