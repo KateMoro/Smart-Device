@@ -1,0 +1,15 @@
+.benefits-about-wrapper {
+  background-image: url("../img/bg-benefits-about.png");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/bg-benefits-about.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 37%;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-position: 50% 79%;
+  }
+}

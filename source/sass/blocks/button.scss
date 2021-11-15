@@ -26,6 +26,12 @@
   border: none;
 }
 
+.button--secondary {
+  color: $color-accent-100;
+  background-color: $color-white;
+  border: 1px solid $color-accent-100;
+}
+
 .button--wide {
   width: 100%;
 }
@@ -38,6 +44,10 @@
 .button--primary:hover {
   color: $color-accent-100;
   background-color: $color-white;
+}
+
+.button--secondary:hover {
+  color: $color-white;
 }
 
 .button:active {
