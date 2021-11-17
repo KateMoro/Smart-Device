@@ -2,6 +2,10 @@
   @media (max-width: $tablet-width) {
     padding-left: 6px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+  }
 }
 
 .footer-contacts h2 {
@@ -17,12 +21,16 @@
   @include list-reset;
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 20px;
+    padding-bottom: 29px;
   }
 }
 
 .footer-contacts p {
   margin: 0;
+
+  @media (max-width: $mobile-width) {
+    padding-right: 5px;
+  }
 }
 
 .footer-contacts a {
