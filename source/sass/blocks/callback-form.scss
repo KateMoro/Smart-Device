@@ -1,0 +1,210 @@
+.callback-form {
+  max-width: 570px;
+  color: $color-white;
+  background-color: $color-accent-100;
+
+  @media (max-width: $tablet-width) {
+    max-width: 590px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+  }
+}
+
+.callback-form h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.callback-form p {
+  margin: 0;
+  margin-bottom: 51px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.callback-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.callback-form__field {
+  margin-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.callback-form__field:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 10px $color-white;
+}
+
+.callback-form input {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  font-family: inherit;
+  font-size: inherit;
+  color: $color-white;
+  background-color: rgba($color-white, 0.1);
+  border: none;
+}
+
+.callback-form input::placeholder {
+  color: inherit;
+}
+
+.callback-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 154px;
+  padding: 11px 16px;
+  font-family: inherit;
+  font-size: inherit;
+  color: $color-white;
+  background-color: rgba($color-white, 0.1);
+  border: none;
+
+  @media (max-width: $tablet-width) {
+    min-height: 159px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 102px;
+  }
+}
+
+.callback-form textarea::placeholder {
+  color: inherit;
+}
+
+.callback-form__field--agreement {
+  position: relative;
+  order: 2;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba($color-white, 0.8);
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 35px;
+  }
+}
+
+.callback-form__field--agreement span::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $color-white;
+
+  @media (max-width: $mobile-width) {
+    left: 1px;
+  }
+}
+
+.callback-form__field--agreement input:checked + span::before {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.callback-form__field--agreement input:focus + span::before {
+  box-shadow: 0 0 0 2px $color-gray-700, 0 0 2px 4px $color-white;
+}
+
+.callback-form__button {
+  align-self: start;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.callback-form__button:hover {
+  color: $color-accent-100;
+  background-color: $color-white;
+}
+
+.callback-form__button:active {
+  opacity: 0.7;
+}
+
+.callback-form--modal {
+  padding: 31px 40px 38px;
+  min-width: 490px;
+  min-height: 605px;
+  display: grid;
+}
+
+.callback-form--modal h3 {
+  font-size: 28px;
+  line-height: 39px;
+}
+
+.callback-form--modal p {
+  margin-bottom: 30px;
+}
+
+.callback-form__field--modal {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.callback-form--modal input {
+  padding: 18px 24px;
+}
+
+.callback-form--modal textarea {
+  min-height: 104px;
+  padding: 13px 24px;
+}
+
+.callback-form--modal .callback-form__button {
+  margin-bottom: 35px;
+}
+
+.callback-form--modal .callback-form__field--agreement {
+  padding: 0;
+  padding-left: 50px;
+  margin: 0;
+}
+
+.callback-form--modal span::before {
+  top: 0;
+  left: 0;
+}

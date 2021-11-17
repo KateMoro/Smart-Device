@@ -49,9 +49,9 @@
       <div class="container container--wide">
         <h2>Печатные платы</h2>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="button button--primary" href="#">
-          <span class="button_text button_text--desktop">Получить бесплатную консультацию</span>
-          <span class="button_text button_text--mobile">Бесплатная консультация</span>
+        <a class="button button--primary" href="#callback">
+          <span class="button__text button__text--desktop">Получить бесплатную консультацию</span>
+          <span class="button__text button__text--mobile">Бесплатная консультация</span>
         </a>
       </div>
     </section>
@@ -212,6 +212,35 @@
         </ul>
       </div>
     </section>
+    <section class="callback" id="callback">
+      <div class="callback__container container">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="callback__form callback-form">
+          <h3>Остались вопросы? Задайте их нам!</h3>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <div class="callback-form__row">
+            <label class="callback-form__field">
+              <span class="visually-hidden">Имя</span>
+              <input type="text" name="name" placeholder="Имя" required>
+            </label>
+            <label class="callback-form__field">
+              <span class="visually-hidden">Телефон</span>
+              <input type="tel" name="phone" placeholder="Телефон" required>
+            </label>
+          </div>
+          <div class="callback-form__field">
+            <textarea name="question" aria-label="Введите текст Вашего сообщения" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <div class="callback-form__row">
+            <label class="callback-form__field callback-form__field--agreement">
+              <input class="visually-hidden" type="checkbox" name="agreement" required>
+              <span>Я согласен на обработку персональных данных</span>
+            </label>
+            <button class="button button--wide callback-form__button" type="submit">Задать вопрос</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -306,6 +335,35 @@
     </div>
   </footer>
 
+  <section class="modal">
+    <div class="modal__content">
+      <form class="callback-form callback-form--modal">
+        <h3>Закажите звонок</h3>
+        <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
+        <label class="callback-form__field callback-form__field--modal">
+          <span class="visually-hidden">Имя</span>
+          <input type="text" name="name" placeholder="Имя" required>
+        </label>
+        <label class="callback-form__field callback-form__field--modal">
+          <span class="visually-hidden">Телефон</span>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+        </label>
+        <div class="callback-form__field callback-form__field--modal">
+          <textarea name="question" aria-label="Введите текст Вашего сообщения" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <label class="callback-form__field callback-form__field--agreement callback-form__field--modal">
+          <input class="visually-hidden" type="checkbox" name="agreement" required>
+          <span>Я согласен на обработку персональных данных</span>
+        </label>
+        <button class="button button--wide callback-form__button" type="submit">Отправить</button>
+      </form>
+      <button class="modal__close" type="button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+    </div>
+  </section>
+
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -1,0 +1,38 @@
+.callback {
+  padding-top: 91px;
+  padding-bottom: 75px;
+  background-color: $color-accent-100;
+  background-image: url("../img/bg-callback.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 87px) 65%;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-image: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+}
+
+.callback__container {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+  }
+}
+
+.callback__form {
+  @media (max-width: $tablet-width) {
+    margin-left: 6px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
+}
