@@ -54,13 +54,13 @@
   opacity: 0.7;
 }
 
-.button_text--desktop {
+.button__text--desktop {
   @media (max-width: $mobile-width) {
     display: none;
   }
 }
 
-.button_text--mobile {
+.button__text--mobile {
   display: none;
 
   @media (max-width: $mobile-width) {
