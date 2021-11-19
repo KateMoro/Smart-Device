@@ -6,9 +6,9 @@
 
   background-color: $color-accent-200;
   background-image:
-    url("../../img/hero@1x.png"),
-    url("../../img/bg-hero-figure.svg"),
-    url("../../img/bg-hero-pattern.png");
+    url("../img/hero@1x.png"),
+    url("../img/bg-hero-figure.svg"),
+    url("../img/bg-hero-pattern.png");
   background-repeat: no-repeat;
   background-position:
     calc(50% + 430px) 258px,
@@ -18,9 +18,9 @@
 
   @media (min-resolution: 2dppx) {
     background-image:
-      url("../../img/hero@2x.png"),
-      url("../../img/bg-hero-figure.svg"),
-      url("../../img/bg-hero-pattern.png");
+      url("../img/hero@2x.png"),
+      url("../img/bg-hero-figure.svg"),
+      url("../img/bg-hero-pattern.png");
   }
 
   @media (max-width: $tablet-width) {
