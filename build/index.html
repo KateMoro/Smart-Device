@@ -120,10 +120,10 @@
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/tab-photo-1@1x.webp 1x, img/products/tab-photo-1@2x.webp 2x">
                   <source type="image/webp" srcset="img/products/desk-photo-1@1x.webp 1x, img/products/desk-photo-1@2x.webp 2x">
                   <img srcset="
-                      img/products/mob-photo-1@1x.jpg 290w,
-                      img/products/mob-photo-1@2x.jpg 580w,
-                      img/products/tab-photo-1@1x.jpg 720w,
-                      img/products/tab-photo-1@2x.jpg 1440w,
+                      img/products/mob-photo-1@1x.png 290w,
+                      img/products/mob-photo-1@2x.png 580w,
+                      img/products/tab-photo-1@1x.png 720w,
+                      img/products/tab-photo-1@2x.png 1440w,
                       img/products/desk-photo-1@1x.png 370w,
                       img/products/desk-photo-1@2x.png 740w" sizes="(max-width: 767px) 290px, (max-width: 1023px) 715px, 370px" src="img/products/desk-photo-1@1x.png" alt="Печатная плата" width="370" height="620">
                 </picture>
@@ -140,10 +140,10 @@
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/tab-photo-2@1x.webp 1x, img/products/tab-photo-2@2x.webp 2x">
                   <source type="image/webp" srcset="img/products/desk-photo-2@1x.webp 1x, img/products/desk-photo-2@2x.webp 2x">
                   <img srcset="
-                      img/products/mob-photo-2@1x.jpg 290w,
-                      img/products/mob-photo-2@2x.jpg 580w,
-                      img/products/tab-photo-2@1x.jpg 720w,
-                      img/products/tab-photo-2@2x.jpg 1440w,
+                      img/products/mob-photo-2@1x.png 290w,
+                      img/products/mob-photo-2@2x.png 580w,
+                      img/products/tab-photo-2@1x.png 720w,
+                      img/products/tab-photo-2@2x.png 1440w,
                       img/products/desk-photo-2@1x.png 370w,
                       img/products/desk-photo-2@2x.png 740w" sizes="(max-width: 767px) 290px, (max-width: 1023px) 715px, 370px" src="img/products/desk-photo-2@1x.png" alt="Процесс монтажа компонентов на печатную плату" width="370" height="620">
                 </picture>
@@ -160,10 +160,10 @@
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/tab-photo-3@1x.webp 1x, img/products/tab-photo-3@2x.webp 2x">
                   <source type="image/webp" srcset="img/products/desk-photo-3@1x.webp 1x, img/products/desk-photo-3@2x.webp 2x">
                   <img srcset="
-                      img/products/mob-photo-3@1x.jpg 290w,
-                      img/products/mob-photo-3@2x.jpg 580w,
-                      img/products/tab-photo-3@1x.jpg 720w,
-                      img/products/tab-photo-3@2x.jpg 1440w,
+                      img/products/mob-photo-3@1x.png 290w,
+                      img/products/mob-photo-3@2x.png 580w,
+                      img/products/tab-photo-3@1x.png 720w,
+                      img/products/tab-photo-3@2x.png 1440w,
                       img/products/desk-photo-3@1x.png 370w,
                       img/products/desk-photo-3@2x.png 740w" sizes="(max-width: 767px) 290px, (max-width: 1023px) 715px, 370px" src="img/products/desk-photo-3@1x.png" alt="Светодиодная лента" width="370" height="620">
                 </picture>
@@ -176,7 +176,7 @@
     <section class="callback" id="callback">
       <div class="callback__container container">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <form class="callback__form callback-form">
+        <form class="callback__form callback-form" action="https://echo.htmlacademy.ru/" method="get">
           <h3>Остались вопросы? Задайте их нам!</h3>
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="callback-form__row">
@@ -186,7 +186,7 @@
             </label>
             <label class="callback-form__field">
               <span class="visually-hidden">Телефон</span>
-              <input type="tel" name="phone" placeholder="Телефон" required="">
+              <input type="tel" name="phone" placeholder="Телефон" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required="">
             </label>
           </div>
           <div class="callback-form__field">
@@ -298,7 +298,7 @@
 
   <section class="modal">
     <div class="modal__content">
-      <form class="callback-form callback-form--modal">
+      <form class="callback-form callback-form--modal" action="https://echo.htmlacademy.ru/" method="get">
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
         <label class="callback-form__field callback-form__field--modal">
@@ -307,7 +307,7 @@
         </label>
         <label class="callback-form__field callback-form__field--modal">
           <span class="visually-hidden">Телефон</span>
-          <input type="tel" name="phone" placeholder="Телефон" required="">
+          <input type="tel" name="phone" placeholder="Телефон" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required="">
         </label>
         <div class="callback-form__field callback-form__field--modal">
           <textarea name="question" aria-label="Введите текст Вашего сообщения" placeholder="Ваш вопрос"></textarea>
