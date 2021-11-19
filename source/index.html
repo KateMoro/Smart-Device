@@ -215,7 +215,7 @@
     <section class="callback" id="callback">
       <div class="callback__container container">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <form class="callback__form callback-form">
+        <form class="callback__form callback-form" action="https://echo.htmlacademy.ru/" method="get">
           <h3>Остались вопросы? Задайте их нам!</h3>
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="callback-form__row">
@@ -225,7 +225,7 @@
             </label>
             <label class="callback-form__field">
               <span class="visually-hidden">Телефон</span>
-              <input type="tel" name="phone" placeholder="Телефон" required>
+              <input type="tel" name="phone" placeholder="Телефон" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
             </label>
           </div>
           <div class="callback-form__field">
@@ -337,7 +337,7 @@
 
   <section class="modal">
     <div class="modal__content">
-      <form class="callback-form callback-form--modal">
+      <form class="callback-form callback-form--modal" action="https://echo.htmlacademy.ru/" method="get">
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
         <label class="callback-form__field callback-form__field--modal">
@@ -346,7 +346,7 @@
         </label>
         <label class="callback-form__field callback-form__field--modal">
           <span class="visually-hidden">Телефон</span>
-          <input type="tel" name="phone" placeholder="Телефон" required>
+          <input type="tel" name="phone" placeholder="Телефон" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
         </label>
         <div class="callback-form__field callback-form__field--modal">
           <textarea name="question" aria-label="Введите текст Вашего сообщения" placeholder="Ваш вопрос"></textarea>
