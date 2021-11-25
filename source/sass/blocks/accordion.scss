@@ -20,6 +20,12 @@
   }
 }
 
+.accordion__trigger:focus {
+  @media (min-width: $desktop-width-only) {
+    outline: none;
+  }
+}
+
 .accordion__trigger::before {
   @media (max-width: $mobile-width) {
     content: "";

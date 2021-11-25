@@ -1,23 +1,24 @@
 .contacts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .contacts li {
+  margin-left: 87px;
   padding: 17px 0;
-}
 
-.contacts li:not(:last-child) {
-  margin-right: 87px;
+  @media (max-width: 1065px) {
+    margin-left: 50px;
+  }
 
   @media (max-width: $tablet-width) {
-    margin-right: 33px;
+    margin-left: 33px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 23px;
+    margin-left: 23px;
   }
 }
 
